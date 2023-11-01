@@ -1,0 +1,17 @@
+import { Navigate } from 'react-router-dom';
+import { useAuth } from 'hooks';
+import PropTypes from 'prop-types';
+
+export const RestrictedRoute = ({ component: Component, redirectTo = '/' }) => {
+  const { isLoggedIn } = useAuth();
+
+  // If the route is restricted and the user is logged in, render <Navigate> to redirectTo
+  // Otherwise render the component
+
+  return isLoggedIn ? <Navigate to={redirectTo} /> : Component;
+};
+
+RestrictedRoute.propTypes = {
+  component: PropTypes.node.isRequired,
+  redirectTo: PropTypes.string,
+};
