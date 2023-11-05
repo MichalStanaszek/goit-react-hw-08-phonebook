@@ -5,3 +5,4 @@ export * from './Error';
 export * from './Loader';
 export * from './PrivateRoute';
 export * from './RestrictedRoute';
+export * from './Home';
