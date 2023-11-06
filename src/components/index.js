@@ -7,3 +7,4 @@ export * from './PrivateRoute';
 export * from './RestrictedRoute';
 export * from './Home';
 export * from './SharedLayout';
+export * from './Contacts';
