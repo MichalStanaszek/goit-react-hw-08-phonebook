@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <div>
       <Helmet>
-        <title>Login</title>
+        <title>Phonebook - Login</title>
       </Helmet>
       <LoginForm />
     </div>

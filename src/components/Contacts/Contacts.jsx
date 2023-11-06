@@ -18,9 +18,6 @@ export const Contacts = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contacts</title>
-      </Helmet>
       {error ? (
         <Error />
       ) : (
