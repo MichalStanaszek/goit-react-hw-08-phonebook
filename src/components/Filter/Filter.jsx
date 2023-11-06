@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter } from 'redux/contactsSlice';
 import { selectFilter } from 'redux/selectors';
 
-import { StyledInput } from 'components/Form/Form.styled';
+import { StyledInput } from 'components/ContactForm/ContactForm.styled';
 import { StyledLabel } from './Filter.styled';
 
 export const Filter = () => {

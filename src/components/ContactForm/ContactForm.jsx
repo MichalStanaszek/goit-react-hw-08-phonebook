@@ -6,9 +6,9 @@ import { addContact } from 'redux/operations';
 import { nanoid } from '@reduxjs/toolkit';
 import Notiflix from 'notiflix';
 
-import { StyledLabel, StyledButton, StyledInput } from './Form.styled';
+import { StyledLabel, StyledButton, StyledInput } from './ContactForm.styled';
 
-export const Form = () => {
+export const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
