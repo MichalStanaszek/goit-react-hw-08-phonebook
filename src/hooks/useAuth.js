@@ -7,12 +7,12 @@ import {
 
 export const useAuth = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const isReffreshing = useSelector(selectIsRefreshing);
+  const isRefreshing = useSelector(selectIsRefreshing);
   const user = useSelector(selectUser);
 
   return {
     isLoggedIn,
-    isReffreshing,
+    isRefreshing,
     user,
   };
 };
