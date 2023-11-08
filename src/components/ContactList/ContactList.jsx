@@ -1,6 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts, selectFilter, selectIsLoading } from 'redux/selectors';
-import { deleteContact } from 'redux/operations';
+import {
+  selectContacts,
+  selectFilter,
+  selectIsLoading,
+} from 'redux/contacts/selectors';
+import { deleteContact } from 'redux/contacts/operations';
 
 import Notiflix from 'notiflix';
 import PropTypes from 'prop-types';
