@@ -9,3 +9,6 @@ export * from './Home';
 export * from './SharedLayout';
 export * from './Contacts';
 export * from './Navigation';
+export * from './UserMenu';
+export * from './AuthNav';
+export * from './AppBar';
