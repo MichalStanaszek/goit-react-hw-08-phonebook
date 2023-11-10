@@ -7,6 +7,7 @@ export const StyledDiv = styled.div`
 export const H1 = styled.h1`
   text-align: center;
   padding: 10px 0;
+  margin: 0;
 `;
 
 export const Img = styled.img`
