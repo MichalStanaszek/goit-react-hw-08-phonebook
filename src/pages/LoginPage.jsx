@@ -1,4 +1,4 @@
-import { LoginForm } from 'components/LoginForm';
+import { AuthForm } from 'components/AuthForm';
 import { Helmet } from 'react-helmet';
 
 const LoginPage = () => {
@@ -7,7 +7,7 @@ const LoginPage = () => {
       <Helmet>
         <title>Phonebook - Login</title>
       </Helmet>
-      <LoginForm />
+      <AuthForm />
     </div>
   );
 };
