@@ -5,6 +5,7 @@ import { useAuth } from 'hooks';
 
 const HomePage = lazy(() => import('../pages/HomePage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
+const RegisterPage = lazy(() => import('../pages/RegisterPage'));
 const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export const App = () => {
@@ -17,7 +18,7 @@ export const App = () => {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
           <Route
-            path="/login"
+            path="login"
             element={
               <RestrictedRoute
                 redirectTo="/contacts"
@@ -26,7 +27,16 @@ export const App = () => {
             }
           />
           <Route
-            path="/contacts"
+            path="register"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<RegisterPage />}
+              />
+            }
+          />
+          <Route
+            path="contacts"
             element={
               <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
             }
