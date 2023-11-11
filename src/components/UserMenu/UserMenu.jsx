@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 
+import { Container, LogoutButton, StyledP, UserTitle } from './UserMenu.styled';
+
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -12,15 +14,16 @@ export const UserMenu = () => {
   const handleLogOut = () => {
     dispatch(logOut());
     navigate('/');
-    // useNavigate + props "replace" żeby nie dało się wrócić na logowanie klikając wstecz
   };
 
   return (
-    <div>
-      <p>Welcome, {user.name}</p>
-      <button type="button" onClick={handleLogOut}>
+    <Container>
+      <StyledP>
+        Welcome, <UserTitle>{user.name}</UserTitle>
+      </StyledP>
+      <LogoutButton type="button" onClick={handleLogOut}>
         Logout
-      </button>
-    </div>
+      </LogoutButton>
+    </Container>
   );
 };

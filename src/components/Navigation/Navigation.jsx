@@ -5,11 +5,9 @@ export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
-      <div>{isLoggedIn ? <Link to="/contacts">Contacts</Link> : null}</div>
-    </>
+    <div>
+      <Link to="/">Home</Link>
+      {isLoggedIn ? <Link to="/contacts">Contacts</Link> : null}
+    </div>
   );
 };

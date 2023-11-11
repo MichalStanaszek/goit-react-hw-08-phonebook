@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 0px 10px;
 `;
 
 export const Link = styled(NavLink)`
