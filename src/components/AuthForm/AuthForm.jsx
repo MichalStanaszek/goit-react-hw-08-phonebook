@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logIn, register } from 'redux/auth/operations';
 
-import 'components/AuthForm/index.css';
 import {
   Button,
   Form,
