@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledDiv = styled.div`
-  background-color: #fff;
-`;
-
 export const H1 = styled.h1`
   text-align: center;
   padding: 10px 0;
