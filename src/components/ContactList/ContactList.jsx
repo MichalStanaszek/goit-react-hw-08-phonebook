@@ -14,7 +14,6 @@ import { Loader } from 'components/Loader';
 import { StyleUl, StyledLi, StyledButon, Wrapper } from './ContactList.styled';
 
 Notiflix.Notify.init({
-  position: 'center-center',
   timeout: 1000,
   pauseOnHover: false,
 });

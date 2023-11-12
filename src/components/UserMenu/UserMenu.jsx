@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
+import Notiflix from 'notiflix';
 
 import { Container, LogoutButton, StyledP, UserTitle } from './UserMenu.styled';
 
@@ -14,6 +15,7 @@ export const UserMenu = () => {
   const handleLogOut = () => {
     dispatch(logOut());
     navigate('/');
+    Notiflix.Notify.success('See you next time!');
   };
 
   return (
